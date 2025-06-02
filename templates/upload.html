@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer</title>
+</head>
+
+<body>
+    <div style="text-align: center; font-size: 20px; color: gold; display:flex;flex-direction:column">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
+
+    <div class="home">
+        <center>
+            <h2>Upload the Image to convert and resize</h2>
+            <form method="POST" enctype='multipart/form-data'>
+                <input type="file" name="image" accept="image/*" required>
+                <p>(or) Drag and Drop your image to resize</p>
+                <button type="submit">Upload & Download</button>
+            </form>
+        </center>
+    </div>
+
+    <div style="text-align: center; font-size: 20px; color: gold;">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
+
+    <style>
+        input[type="file"] {
+            padding: 5px;
+            border: 1px solid #e39059;
+            border-radius: 3px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        button[type="submit"] {
+            padding: 8px 15px;
+            background-color: #c77608;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #c66b38;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        body {
+            background-color: #182d30;
+        }
+
+        .home {
+            border: 2px solid black;
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+            background: linear-gradient(135deg, #5f3441);
+        }
+
+        center {
+            background: linear-gradient(135deg, #5f3441, #5f3441);
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px dashed white;
+        }
+    </style>
+
+</body>
+
+</html>
